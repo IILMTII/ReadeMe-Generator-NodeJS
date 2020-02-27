@@ -76,6 +76,7 @@ promptUser()
         // });
         axios.get(queryUrlname).then(function(res) {
             console.log(res);
+            console.log("Readme.md Generated !");
             const data = generateReadme(res);
 
             return writeFileAsync("Readme.md", data);
