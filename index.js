@@ -7,10 +7,51 @@ const writeFileAsync = util.promisify(fs.writeFile);
 
 function promptUser() {
     return inquirer.prompt([{
-        type: "input",
-        name: "username",
-        message: "What is your GitHub Username?"
-    }]);
+            type: "input",
+            name: "username",
+            message: "What is your GitHub Username?"
+        },
+        {
+            type: "input",
+            name: "title",
+            message: "Project title ?"
+        },
+        {
+            type: "input",
+            name: "description",
+            message: "Write a short description on the project ?"
+        },
+        {
+            type: "input",
+            name: "contents",
+            message: "Table of contents ?"
+        },
+        {
+            type: "input",
+            name: "installation",
+            message: "Installation procedure ?"
+        },
+        {
+            type: "input",
+            name: "usage",
+            message: "Project walkthrough ?"
+        },
+        {
+            type: "input",
+            name: "license",
+            message: "Licenses ?"
+        },
+        {
+            type: "input",
+            name: "contributions",
+            message: "Any contributions ?"
+        },
+        {
+            type: "input",
+            name: "tests",
+            message: "Any test cases ?"
+        }
+    ]);
 }
 
 // function generateHTML(answers) {
