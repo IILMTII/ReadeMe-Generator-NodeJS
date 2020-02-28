@@ -106,5 +106,5 @@ function generateReadmeLogin(res) {
     }
 
     return `
-    \n## Questions:\n# Contact: \nName:${res.data.login} \n Email: ${email}`;
+    \n# Questions:\n## Contact: \nName: ${res.data.login} \nEmail: ${email}`;
 }

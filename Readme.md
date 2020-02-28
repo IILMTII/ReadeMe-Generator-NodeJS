@@ -1,6 +1,6 @@
-# gksvhkkvsa
+# dkjahfkws
 ## Description:
-gksvhkkvsa
+dkjahfkws
 ## Table of Contents:
 * [Installation](#installation)
         
@@ -9,19 +9,19 @@ gksvhkkvsa
 * [License](#license)
         
 ## Installation:
-Download folder from Github and Run .exe from local storage.,Download package installer from website.
+Git clone program folder and install dependencies.,Download package installer from website.
 ## Usage:
-gksvhkkvsa 
+dkjahfkws  
 ## Credits:
         
 ## License:
-gksvhkkvsa  
+dkjahfkws   
 ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 ## Badges:
         
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
     
-## Questions:
-# Contact: 
-Name:IILMTII 
- Email: Email is set to Private. Change Email privacy settings in Github, to log.
+# Questions:
+## Contact: 
+Name: IILMTII 
+Email: Email is set to Private. Change Email privacy settings in Github, to log.
