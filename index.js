@@ -18,41 +18,41 @@ function promptUserFirst() {
     return inquirer.prompt([{
             type: "input",
             name: "title",
-            message: "Project title ?"
+            message: "What's the project title ?"
         },
         {
             type: "input",
             name: "description",
-            message: "Write a short description on the project ?"
+            message: "Please write a short description on the project:"
+        },
+        {
+            type: "checkbox",
+            name: "Installation",
+            message: "Installation procedure ?",
+            choices: [
+                "Download folder from Github and Run .exe from local storage.",
+                "Git clone program folder and install dependencies.",
+                "Download package installer from website."
+            ]
         },
         {
             type: "input",
-            name: "contents",
-            message: "Table of contents ?"
+            name: "Usage",
+            message: "Enter a typical use case for this project ?"
         },
         {
             type: "input",
-            name: "installation",
-            message: "Installation procedure ?"
-        },
-        {
-            type: "input",
-            name: "usage",
-            message: "Project walkthrough ?"
-        },
-        {
-            type: "input",
-            name: "license",
+            name: "License",
             message: "Licenses ?"
         },
         {
             type: "input",
-            name: "contributions",
+            name: "Contributions",
             message: "Any contributions ?"
         },
         {
             type: "input",
-            name: "tests",
+            name: "Tests",
             message: "Any test cases ?"
         }
     ]);
@@ -60,7 +60,16 @@ function promptUserFirst() {
 
 promptUserFirst()
     .then(function(data) {
-        appendFileAsync("Readme.md", `# Your Project Title\n${data.title}`);
+        console.log(data);
+        var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
+        writeFileAsync("Readme.md", `#${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n${data.contents}\n* [Installation](#installation)
+        \n* [Usage](#usage)\n* [Credits](#credits)\n* [License](#license)
+        \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Credits:
+        \n## License:\n${data.License}\nThe last section of a good README is a 
+        license. This lets other developers know what they can and cannot 
+        do with your project. If you need help choosing a license, use 
+        [https://choosealicense.com/](https://choosealicense.com/)\n## Badges:
+        \n${badgeLicense}\n![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)`);
 
     })
     // .then(function() {
@@ -79,7 +88,7 @@ promptUserFirst()
                     // console.log(res);
                     const data = generateReadmeLogin(res);
                     console.log("Readme.md Generated !");
-                    return writeFileAsync("Readme.md", data);
+                    return appendFileAsync("Readme.md", data);
 
 
                 })
@@ -98,15 +107,7 @@ function generateReadmeLogin(res) {
     } else {
         var email = res.data.email;
     }
-    var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
-    return `# Your Project Title:\nName: ${res.data.login}\n## Description:
-    \nEmail: ${email}\n## Table of Contents\n* [Installation]
-    (#installation)\n* [Usage](#usage)\n* [Credits](#credits)\n
-    * [License](#license)\n## Installation\n## Usage\n## Credits\n## License
-    \n${badgeLicense}\nThe last section of a good README is a 
-    license. This lets other developers know what they can and cannot 
-    do with your project. If you need help choosing a license, use 
-    [https://choosealicense.com/](https://choosealicense.com/)\n## Badges
-    \n![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-    \n## Contributing`;
+
+    return `
+    \n## Contributing: \n${res.data.login}\nEmail: ${email}`;
 }
