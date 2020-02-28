@@ -100,11 +100,11 @@ promptUserFirst()
 function generateReadmeLogin(res) {
 
     if (res.data.email === null) {
-        var email = "Email is set to Private. Change Email privacy settings in Github, to log.";
+        var email = "Email is set to Private. Contact me on LinkedIn !";
     } else {
         var email = res.data.email;
     }
 
     return `
-    \n# Questions:\n## Contact: \nName: ${res.data.login} \nEmail: ${email}`;
+    \n# Questions:\n## Contact: \n**Name:** ${res.data.login}, \n**Email:** ${email}`;
 }
