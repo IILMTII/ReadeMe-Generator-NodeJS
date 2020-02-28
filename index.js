@@ -46,6 +46,15 @@ function promptUserFirst() {
             message: "Licenses ?"
         },
         {
+            type: "checkbox",
+            name: "badges",
+            message: "Select some badges for your project:",
+            choices: [
+                "![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)",
+                "[badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)"
+            ]
+        },
+        {
             type: "input",
             name: "Contributions",
             message: "Any contributions ?"
@@ -65,7 +74,7 @@ promptUserFirst()
         writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#installation)
         \n* [Usage](#usage)\n* [Credits](#credits)\n* [License](#license)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Credits:
-        \n## License:\n${data.License} \n${badgeLicense}\n## Badges:
+        \n## Licenses:\n${data.License} \n${badgeLicense}\n## Badges:\n${data.badges}
         \n![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)`);
 
     })
@@ -106,5 +115,5 @@ function generateReadmeLogin(res) {
     }
 
     return `
-    \n# Questions:\n## Contact: \n**Name:** ${res.data.login}, \n**Email:** ${email}`;
+    \n## Questions ?, Contact:\n**Name:** ${res.data.login}, \n**Email:** ${email}`;
 }

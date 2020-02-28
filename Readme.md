@@ -1,6 +1,6 @@
-# kjhvfkjhkjs
+# hkjfjkdv
 ## Description:
-kjhvfkjhkjs
+hkjfjkdv
 ## Table of Contents:
 * [Installation](#installation)
         
@@ -9,19 +9,19 @@ kjhvfkjhkjs
 * [License](#license)
         
 ## Installation:
-Download folder from Github and Run .exe from local storage.,Git clone program folder and install dependencies.
+Download folder from Github and Run .exe from local storage.,Download package installer from website.
 ## Usage:
-kjhvfkjhkjs 
+hkjfjkdv
 ## Credits:
         
-## License:
-kjhvfkjhkjs  
+## Licenses:
+hkjfjkdv 
 ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 ## Badges:
+![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg),[badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
         
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
     
-# Questions:
-## Contact: 
+## Questions ?, Contact:
 **Name:** IILMTII, 
 **Email:** Email is set to Private. Contact me on LinkedIn !
