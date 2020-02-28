@@ -13,14 +13,15 @@ Email: Email is set to Private. Change Email privacy settings in Github, to log.
 ## Installation
 ## Usage
 ## Credits
-
-    ## License
-![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)The last section of a good README is a 
+## License
+    
+![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+The last section of a good README is a 
     license. This lets other developers know what they can and cannot 
     do with your project. If you need help choosing a license, use 
     [https://choosealicense.com/](https://choosealicense.com/)
-
-    ## Badges
+## Badges
+    
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
     
 ## Contributing

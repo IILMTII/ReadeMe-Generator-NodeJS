@@ -102,11 +102,11 @@ function generateReadmeLogin(res) {
     return `# Your Project Title:\nName: ${res.data.login}\n## Description:
     \nEmail: ${email}\n## Table of Contents\n* [Installation]
     (#installation)\n* [Usage](#usage)\n* [Credits](#credits)\n
-    * [License](#license)\n## Installation\n## Usage\n## Credits\n
-    ## License\n${badgeLicense}The last section of a good README is a 
+    * [License](#license)\n## Installation\n## Usage\n## Credits\n## License
+    \n${badgeLicense}\nThe last section of a good README is a 
     license. This lets other developers know what they can and cannot 
     do with your project. If you need help choosing a license, use 
-    [https://choosealicense.com/](https://choosealicense.com/)\n
-    ## Badges\n![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+    [https://choosealicense.com/](https://choosealicense.com/)\n## Badges
+    \n![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
     \n## Contributing`;
 }
