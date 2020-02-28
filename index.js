@@ -62,7 +62,7 @@ promptUserFirst()
     .then(function(data) {
         console.log(data);
         var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
-        writeFileAsync("Readme.md", `#${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#installation)
+        writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#installation)
         \n* [Usage](#usage)\n* [Credits](#credits)\n* [License](#license)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Credits:
         \n## License:\n${data.License}\n${badgeLicense}\n## Badges:

@@ -1,8 +1,7 @@
-#kgfkag
+# kjfhkjashgkhfakj
 ## Description:
-kgfkag
+kjfhkjashgkhfakj
 ## Table of Contents:
-undefined
 * [Installation](#installation)
         
 * [Usage](#usage)
@@ -10,22 +9,19 @@ undefined
 * [License](#license)
         
 ## Installation:
-Git clone program folder and install dependencies.,Download package installer from website.
+Download folder from Github and Run .exe from local storage.,Git clone program folder and install dependencies.
 ## Usage:
-kgfkag
+kjfhkjashgkhfakj 
 ## Credits:
         
 ## License:
-kgfkag
-The last section of a good README is a 
-        license. This lets other developers know what they can and cannot 
-        do with your project. If you need help choosing a license, use 
-        [https://choosealicense.com/](https://choosealicense.com/)
+kjfhkjashgkhfakj 
+![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 ## Badges:
         
-![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
     
-## Contributing: 
-IILMTII
+## Questions:
+# Contact: 
+Name:IILMTII 
 Email: Email is set to Private. Change Email privacy settings in Github, to log.
