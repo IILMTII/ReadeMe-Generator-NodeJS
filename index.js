@@ -65,7 +65,7 @@ promptUserFirst()
         writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#installation)
         \n* [Usage](#usage)\n* [Credits](#credits)\n* [License](#license)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Credits:
-        \n## License:\n${data.License}\n${badgeLicense}\n## Badges:
+        \n## License:\n${data.License} \n${badgeLicense}\n## Badges:
         \n![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)`);
 
     })
@@ -106,5 +106,5 @@ function generateReadmeLogin(res) {
     }
 
     return `
-    \n## Questions:\n# Contact: \nName:${res.data.login} \nEmail: ${email}`;
+    \n## Questions:\n# Contact: \nName:${res.data.login} \n Email: ${email}`;
 }
