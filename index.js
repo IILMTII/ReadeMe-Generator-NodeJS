@@ -71,10 +71,10 @@ function promptUserFirst() {
 
 promptUserFirst()
     .then(function(data) {
-        console.log(data);
+        // console.log(data);
         var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
         writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#Installation)
-        \n* [Usage](#Usage)\n* [Contributions](#Contributions)\n* [Test Cases](#Test_Cases) \n* [Licenses](#Licenses) \n* [Badges](#Badges)
+        \n* [Usage](#Usage)\n* [Contributions](#Contributions)\n* [Tests](#Tests) \n* [Licenses](#Licenses) \n* [Badges](#Badges)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.Contributions}
         \n## Test Cases:\n${data.Tests} \n## Licenses: \n${badgeLicense} 
          \n${data.License} \n## Badges:\n${data.badges}`);
@@ -93,7 +93,7 @@ promptUserFirst()
                 const queryUrlname = `https://api.github.com/users/${username}`;
 
                 axios.get(queryUrlname).then(function(res) {
-                    console.log(res);
+                    // console.log(res);
                     const data = generateReadmeLogin(res);
                     console.log("Readme.md Generated !");
                     return appendFileAsync("Readme.md", data);
