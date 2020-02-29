@@ -1,6 +1,6 @@
 # Read Me Generator
 ## Description:
-This is a readme generator
+Read Me Generator
 ## Table of Contents:
 * [Installation](#Installation)
         
@@ -18,7 +18,7 @@ To test readme generators
 Yes, Me !
         
 ## Test Cases:
-No test cases 
+No 
 ## Licenses: 
 ![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg) 
          
