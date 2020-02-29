@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
 const util = require("util");
-const mdToPdf = require('md-to-pdf');
+const mdToPdf = require("md-to-pdf");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
@@ -77,7 +77,7 @@ promptUserFirst()
         writeFileAsync("Readme.md", `# ${data.title} <p align="center"><img width="737" height="497" src=./ReadMeGenerator.gif></p> 
         \n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#Installation)
         \n* [Usage](#Usage)\n* [Contributors](#Contributors)\n* [Tests](#Tests) \n* [Licenses](#Licenses) \n* [Badges](#Badges)
-        \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.Contributions}
+        \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.contributors}
         \n## Test Cases:\n${data.Tests} \n## Licenses: \n${badgeLicense} 
          \n${data.License} \n## Badges:\n${data.badges}`);
 
