@@ -6,7 +6,7 @@ Read Me Generator
 * [Installation](#Installation)
         
 * [Usage](#Usage)
-* [Contributions](#Contributions)
+* [Contributors](#Contributors)
 * [Tests](#Tests) 
 * [Licenses](#Licenses) 
 * [Badges](#Badges)
@@ -16,7 +16,7 @@ Download folder from Github and Run .exe from local storage.,Git clone program f
 ## Usage:
 To test readme generators
 ## Contributions: 
-Yes, Me !
+undefined
         
 ## Test Cases:
 No 

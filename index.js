@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const axios = require("axios");
 const util = require("util");
+const mdToPdf = require('md-to-pdf');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 const appendFileAsync = util.promisify(fs.appendFile);
@@ -58,8 +59,8 @@ function promptUserFirst() {
         },
         {
             type: "input",
-            name: "Contributions",
-            message: "Any contributions ?"
+            name: "contributors",
+            message: "Any contributors ?"
         },
         {
             type: "input",
@@ -75,7 +76,7 @@ promptUserFirst()
         var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
         writeFileAsync("Readme.md", `# ${data.title} <p align="center"><img width="737" height="497" src=./ReadMeGenerator.gif></p> 
         \n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#Installation)
-        \n* [Usage](#Usage)\n* [Contributions](#Contributions)\n* [Tests](#Tests) \n* [Licenses](#Licenses) \n* [Badges](#Badges)
+        \n* [Usage](#Usage)\n* [Contributors](#Contributors)\n* [Tests](#Tests) \n* [Licenses](#Licenses) \n* [Badges](#Badges)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.Contributions}
         \n## Test Cases:\n${data.Tests} \n## Licenses: \n${badgeLicense} 
          \n${data.License} \n## Badges:\n${data.badges}`);
@@ -97,10 +98,16 @@ promptUserFirst()
                     // console.log(res);
                     const data = generateReadmeLogin(res);
                     console.log("Readme.md Generated !");
-                    return appendFileAsync("Readme.md", data);
+                    appendFileAsync("Readme.md", data);
+                    (async() => {
+                        const pdf = await mdToPdf('Readme.md', { dest: 'readme.pdf' }).catch(console.error);
 
-
+                        if (pdf) {
+                            console.log(pdf.filename);
+                        }
+                    })();
                 })
+
             })
             .catch(function(err) {
                 console.log(err);
