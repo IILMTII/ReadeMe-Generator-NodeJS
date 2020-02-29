@@ -50,8 +50,10 @@ function promptUserFirst() {
             name: "badges",
             message: "Select some badges for your project:",
             choices: [
-                "![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)",
-                "[badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)"
+                "![GitHub license](https://img.shields.io/badge/GitHub-MIT-green.svg)",
+                "![JavaScript Badge](https://img.shields.io/badge/JavaScript-ES6-blue.svg)",
+                "![NodeJS Badge](https://img.shields.io/badge/NodeJS-v.10-lightgreen.svg)",
+                "![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-v.4.0-purple.svg)"
             ]
         },
         {
@@ -72,10 +74,9 @@ promptUserFirst()
         console.log(data);
         var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
         writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#installation)
-        \n* [Usage](#usage)\n* [Credits](#credits)\n* [License](#license)
-        \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Credits:
-        \n## Licenses:\n${data.License} \n${badgeLicense}\n## Badges:\n${data.badges}
-        \n![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)`);
+        \n* [Usage](#usage)\n* [Contributions](#Contributions)\n* [License](#license)
+        \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.Contributions}
+        \n## Tests:\n${data.Tests} \n## Licenses:\n${data.License} \n${badgeLicense}\n## Badges:\n${data.badges}`);
 
     })
     // .then(function() {
