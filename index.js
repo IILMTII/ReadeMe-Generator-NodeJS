@@ -76,7 +76,8 @@ promptUserFirst()
         writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#installation)
         \n* [Usage](#usage)\n* [Contributions](#Contributions)\n* [License](#license)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.Contributions}
-        \n## Test Cases:\n${data.Tests} \n## Licenses: \n${badgeLicense} \n${data.License} \n## Badges:\n${data.badges}`);
+        \n## Test Cases:\n${data.Tests} \n## Licenses: \n${badgeLicense} 
+         \n${data.License} \n## Badges:\n${data.badges}`);
 
     })
     // .then(function() {
