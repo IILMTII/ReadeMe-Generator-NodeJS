@@ -1,6 +1,6 @@
-# gflkhshkjsajfg
+# Read-Me Generator
 ## Description:
-gflkhshkjsajfg
+Read-Me Generator
 ## Table of Contents:
 * [Installation](#installation)
         
@@ -11,17 +11,17 @@ gflkhshkjsajfg
 ## Installation:
 Download folder from Github and Run .exe from local storage.,Git clone program folder and install dependencies.,Download package installer from website.
 ## Usage:
-gflkhshkjsajfg
+Read-Me Generator
 ## Contributions: 
-gflkhshkjsajfg
+Read-Me Generator, Eli Mason Dash 
         
 ## Tests:
-gflkhshkjsajfg 
-## Licenses:
-gflkhshkjsajfg 
-![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)
+No 
+## Licenses: 
+![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg) 
+Read-Me Generator 
 ## Badges:
-![GitHub license](https://img.shields.io/badge/GitHub-MIT-green.svg),![JavaScript Badge](https://img.shields.io/badge/JavaScript-ES6-blue.svg),![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-v.4.0-purple.svg)
+![GitHub license](https://img.shields.io/badge/GitHub-MIT-green.svg),![JavaScript Badge](https://img.shields.io/badge/JavaScript-ES6-blue.svg),![NodeJS Badge](https://img.shields.io/badge/NodeJS-v.10-lightgreen.svg),![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-v.4.0-purple.svg)
     
 ## Questions ?, Contact:
 **Name:** IILMTII, 
