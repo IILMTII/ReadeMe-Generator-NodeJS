@@ -71,12 +71,12 @@ function promptUserFirst() {
 
 promptUserFirst()
     .then(function(data) {
-        console.log(data.badges);
+        console.log(data);
         var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
         writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#installation)
         \n* [Usage](#usage)\n* [Contributions](#Contributions)\n* [License](#license)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.Contributions}
-        \n## Tests:\n${data.Tests} \n## Licenses: \n${badgeLicense} \n${data.License} \n## Badges:\n${data.badges}`);
+        \n## Test Cases:\n${data.Tests} \n## Licenses: \n${badgeLicense} \n${data.License} \n## Badges:\n${data.badges}`);
 
     })
     // .then(function() {
@@ -92,7 +92,7 @@ promptUserFirst()
                 const queryUrlname = `https://api.github.com/users/${username}`;
 
                 axios.get(queryUrlname).then(function(res) {
-                    // console.log(res);
+                    console.log(res);
                     const data = generateReadmeLogin(res);
                     console.log("Readme.md Generated !");
                     return appendFileAsync("Readme.md", data);
@@ -116,5 +116,6 @@ function generateReadmeLogin(res) {
     }
 
     return `
-    \n## Questions ?, Contact:\n**Name:** ${res.data.login}, \n**Email:** ${email}`;
+    \n## Questions ?, Contact:\n<p align="center"><img width="100" height="100" src=${res.data.avatar_url}></p>,
+     \n**Name:** ${res.data.login}, \n**Email:** ${email}`;
 }
