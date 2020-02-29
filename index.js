@@ -116,6 +116,6 @@ function generateReadmeLogin(res) {
     }
 
     return `
-    \n## Questions ?, Contact:\n<p align="center"><img width="100" height="100" src=${res.data.avatar_url}></p>,
+    \n## Questions ?, Contact:\n<p align="left"><img width="100" height="100" src=${res.data.avatar_url}></p>,
      \n**Name:** ${res.data.login}, \n**Email:** ${email}`;
 }
