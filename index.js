@@ -74,7 +74,7 @@ promptUserFirst()
         console.log(data);
         var badgeLicense = '![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)';
         writeFileAsync("Readme.md", `# ${data.title}\n## Description:\n${data.description}\n## Table of Contents:\n* [Installation](#Installation)
-        \n* [Usage](#Usage)\n* [Contributions](#Contributions)\n* [Test Cases](#Tests)\n* [Licenses](#License)\n* [Badges](#badges)
+        \n* [Usage](#Usage)\n* [Contributions](#Contributions)\n* [Test Cases](#Tests) \n* [Licenses](#License) \n* [Badges](#badges)
         \n## Installation:\n${data.Installation}\n## Usage:\n${data.Usage}\n## Contributions: \n${data.Contributions}
         \n## Test Cases:\n${data.Tests} \n## Licenses: \n${badgeLicense} 
          \n${data.License} \n## Badges:\n${data.badges}`);
